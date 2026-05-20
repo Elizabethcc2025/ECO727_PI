@@ -45,5 +45,20 @@
   color: #009acd; /* texto azul cielo más oscuro */
 }
 
+/* 🎨 Estilos para la galería */
+.gallery {
+  display: flex;              /* organiza en fila */
+  flex-wrap: wrap;            /* permite que bajen a otra línea */
+  justify-content: center;    /* centra las imágenes */
+  gap: 20px;                  /* espacio entre imágenes */
+  margin-top: 20px;
+}
 
-  
+.img-gallery {
+  width: 200px !important;    /* fuerza ancho fijo */
+  height: 150px !important;   /* fuerza altura fija */
+  object-fit: cover;          /* recorta sin deformar */
+  border-radius: 10px;        /* esquinas redondeadas */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* sombra ligera */
+  display: block;             /* asegura que se comporte como bloque */
+}

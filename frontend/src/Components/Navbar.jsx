@@ -18,7 +18,7 @@ export default function Navbar() {
 export function Inicio() {
   return (
     <section id="inicio">
-      <h1>Cafetería La Paz</h1>
+      <h1>Cafetería Cecytem La Paz</h1>
       <p>El sabor que despierta tus mañanas ☕</p>
       <p>Disfruta de un ambiente acogedor y productos artesanales.</p>
     </section>
@@ -119,8 +119,8 @@ export function Testimonios() {
       <h2>Testimonios</h2>
       <div>
         <p>“El mejor café de la zona, siempre fresco.” ⭐⭐⭐⭐⭐</p>
-        <p>“Ambiente ideal para estudiar o reunirse.” ⭐⭐⭐⭐</p>
-        <p>“Los postres son deliciosos y caseros.” ⭐⭐⭐⭐⭐</p>
+        <p>“Ambiente ideal para estudiar o reunirse.”  ⭐⭐⭐⭐</p>
+        <p>“Los postres son deliciosos y caseros.”     ⭐⭐⭐⭐⭐</p>
       </div>
     </section>
   );
