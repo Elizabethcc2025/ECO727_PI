@@ -12,3 +12,4 @@ export default function Footer() {
         </footer>
     );
 }
+export default App;
