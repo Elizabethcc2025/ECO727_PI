@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer>
-            <p>Texto</p>
+            <p>PÁGINA REALIZADA CON FINES ACADÉMICOS</p>
             <nav>
                 <a href="https://www.gob.mx/aviso_de_privacidad" target="_blank" >Aviso de Privacidad |</a>
                 <a href="INSERTAR URL DE FACEBOOK" target="_blank">Facebook |</a>
@@ -12,4 +12,3 @@ export default function Footer() {
         </footer>
     );
 }
-export default App;
