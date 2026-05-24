@@ -20,7 +20,7 @@ function App() {
     es ofrecer café preparado con granos seleccionados y un espacio ideal para
     convivir, estudiar o trabajar. Creemos en el trato cercano y en crear
     experiencias que hagan sentir a cada visitante como en casa. </p>
-        <img className='Logo' src="/assets/INSERTE_AQUI_CARPETA_YARCHIVo" alt="TEXTO" />
+    
       </section>
 
 
@@ -35,7 +35,10 @@ function App() {
 
       <Services />
       <Gallery />
+
       {/* 👇 Aquí agregas tu video */}
+
+{/* 👇 Aquí agregas tu video */}
 <section id="video">
   <h2>Video de nuestras especialidades</h2>
   <video controls width="650" height="400">
@@ -43,6 +46,9 @@ function App() {
     Tu navegador no soporta video.
   </video>
 </section>
+
+
+
       <Testimonials />
       <ContactForm />
       <Footer />

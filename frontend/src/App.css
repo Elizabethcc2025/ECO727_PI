@@ -1,9 +1,9 @@
 #root {
-  max-width: 1280px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #f0faff; /* fondo suave azul cielo */
+  background-color: #F8F0E3; 
 }
 
 .logo {
@@ -36,9 +36,9 @@
 
 .card {
   padding: 2em;
-  border: 2px solid #00bfff; /* borde azul cielo */
+  border: 2px solid #E2725B; 
   border-radius: 8px;
-  background-color: #e6f7ff; /* fondo azul cielo muy claro */
+  background-color: #F5F5DC; /* fondo azul cielo muy claro */
 }
 
 .read-the-docs {
@@ -47,16 +47,15 @@
 
 /* 🎨 Estilos para la galería */
 .gallery {
-  display: flex;              /* organiza en fila */
-  flex-wrap: wrap;            /* permite que bajen a otra línea */
-  justify-content: center;    /* centra las imágenes */
-  gap: 20px;                  /* espacio entre imágenes */
-  margin-top: 20px;
+  display: grid;                          /* usamos grid */
+    grid-template-columns: repeat(4, 1fr);  /* 4 columnas iguales */
+    gap: 20px;                              /* espacio entre imágenes */
+    margin-top: 20px;
 }
 
 .img-gallery {
-  width: 200px !important;    /* fuerza ancho fijo */
-  height: 150px !important;   /* fuerza altura fija */
+  width: 370px !important;    /* fuerza ancho fijo */
+  height: 270px !important;   /* fuerza altura fija */
   object-fit: cover;          /* recorta sin deformar */
   border-radius: 10px;        /* esquinas redondeadas */
   box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* sombra ligera */
@@ -67,4 +66,152 @@
   text-align: center;
   margin-bottom: 20px;
 }
+.navbar {
+  background-color: #E2725B; /* terracota */
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  border: none;              /* elimina cualquier borde */
+  border-top: none !important;   /* fuerza quitar borde superior */
+  border-bottom: none !important;/* fuerza quitar borde inferior */
+}
+
+
+.navbar a {
+  font-size: 28px;       /* tamaño de letra más grande */
+  margin: 0 40px;        /* separación horizontal entre palabras */
+  color: #FFFFFF;        /* texto blanco */
+  text-decoration: none; /* sin subrayado */
+  font-weight: 600;      /* grosor de la fuente */
+  letter-spacing: 2px;   /* separación entre letras dentro de cada palabra */
+}
+header, nav {
+  border: none !important;
+  background-color: #E2725B; /* mismo color que la barra */
+}
+
+
+
+/* 🎨 Estilos para las demás secciones */
+
+/* Títulos principales y secundarios */
+section h1, 
+section h2 {
+  color: red; /* títulos en rojo */
+}
+
+/* Párrafos */
+section p {
+  color: red; /* párrafos en rojo */
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Tablas en la sección Servicios */
+#servicios table, 
+#servicios th, 
+#servicios td {
+  color: red; /* texto en rojo */
+  border: 1px solid red; /* bordes en rojo */
+
+}
+
+/* 🎨 Justificar texto en todas las secciones */
+section p {
+  color: red;             /* texto en rojo (como pediste antes) */
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;    /* justifica el texto */
+  margin: 0 auto;
+  max-width: 900px;       /* opcional: limita el ancho para mejor lectura */
+}
+/* 🎨 Centrar texto en la sección Inicio */
+#inicio p {
+  color: red;             /* mantiene el color rojo */
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;     /* centra el texto */
+  margin: 0 auto;
+  max-width: 900px;       /* opcional: limita el ancho para mejor lectura */
+}
+/* 🎨 Encabezado de la tabla Servicios */
+#servicios thead th {
+  background-color: #E2725B; /* fondo terracota */
+  color: #FFFFFF;            /* texto blanco para contraste */
+  font-size: 20px;           /* tamaño de fuente más grande */
+  padding: 10px;             /* espacio interno */
+  text-align: center;        /* centra el texto */
+}
+/* 🎨 Estilos específicos para la sección Misión y Visión */
+#mision-vision strong {
+  display: block;          /* convierte Misión: y Visión: en bloque */
+  text-align: center;      /* centra los subtítulos */
+  font-size: 20px;         /* tamaño más grande */
+  margin-bottom: 8px;      /* espacio debajo del subtítulo */
+  color: red;              /* mantiene el color rojo */
+}
+
+#mision-vision p {
+  text-align: justify;     /* justifica el texto */
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 900px;        /* opcional: limita el ancho para mejor lectura */
+  color: red;              /* mantiene el color rojo */
+}
+
+/* 🎨 Formulario */
+form {
+  background-color: #E2725B; /* fondo terracota */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form label,
+form input,
+form textarea {
+  color: #FFFFFF; /* texto blanco para contraste */
+  font-size: 16px;
+}
+
+form button {
+  background-color: #FFFFFF; /* botón blanco */
+  color: #E2725B;            /* texto terracota */
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #CD5C5C; /* tono terracota más oscuro al pasar el mouse */
+  color: #FFFFFF;
+}
+
+/* 🎨 Pie de página */
+footer {
+  background-color: #E2725B; /* fondo terracota */
+  color: #FFFFFF;            /* texto blanco */
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  color: #FFFFFF;            /* enlaces en blanco */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
 

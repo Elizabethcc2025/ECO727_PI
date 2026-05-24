@@ -7,7 +7,7 @@ export default function Gallery() {
         <img className="img-gallery" src="/assets/cafe3.jpg" alt="Café 3" />
         <img className="img-gallery" src="/assets/cafe4.jpg" alt="Café 4" />
         <img className="img-gallery" src="/assets/cafe7.jpg" alt="Café 7" />
-        <img className="img-gallery" src="/assets/cafe7.jpg" alt="Café 7" />
+        
       </div>
     </section>
   );
