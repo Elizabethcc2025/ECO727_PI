@@ -45,27 +45,60 @@
   color: #009acd; /* texto azul cielo más oscuro */
 }
 
-/* 🎨 Estilos para la galería */
+
+/* =========================================================================
+   🎨 ESTILOS CORREGIDOS PARA LA GALERÍA (COPIA Y REEMPLAZA ESTO)
+   ========================================================================= */
+
+/* 1. Contenedor Grid Principal */
 .gallery {
-  display: grid;                          /* usamos grid */
-    grid-template-columns: repeat(4, 1fr);  /* 4 columnas iguales */
-    gap: 20px;                              /* espacio entre imágenes */
-    margin-top: 20px;
+  display: grid;                          /* Usamos Grid */
+  grid-template-columns: repeat(4, 1fr);  /* 4 columnas iguales en pantallas grandes */
+  gap: 30px;                              /* Espacio limpio entre cada tarjeta */
+  margin-top: 20px;
+  justify-items: center;                  /* Centra cada tarjeta en su espacio del Grid */
 }
 
-.img-gallery {
-  width: 370px !important;    /* fuerza ancho fijo */
-  height: 270px !important;   /* fuerza altura fija */
-  object-fit: cover;          /* recorta sin deformar */
-  border-radius: 10px;        /* esquinas redondeadas */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* sombra ligera */
-  display: block;             /* asegura que se comporte como bloque */
+/* 2. Contenedor de la Tarjeta (Imagen + Texto) */
+.gallery figure {
+  margin: 0;
+  padding: 0;
+  width: 370px;                           /* Ancho exacto igual al de tus fotos */
+  display: flex;                          /* Activa Flexbox interno */
+  flex-direction: column;                 /* Acomoda los elementos hacia abajo (en vertical) */
+  align-items: center;                    /* Centra horizontalmente la foto y el texto */
 }
+
+/* 3. Estilo de la Imagen */
+.img-gallery {
+  width: 370px !important;                /* Fuerza el ancho fijo */
+  height: 270px !important;               /* Fuerza la altura fija */
+  object-fit: cover;                      /* Recorta la foto sin deformarla */
+  border-radius: 10px;                    /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Sombra suave para darle volumen */
+}
+
+/* 4. Estilo del Pie de Página (Texto) */
+.gallery figcaption {
+  display: block !important;              /* Asegura que el navegador lo renderice */
+  margin-top: 12px;                       /* Crea un espacio limpio debajo de la foto */
+  font-size: 18px !important;             /* Tamaño de letra perfectamente legible */
+  color: red !important;                  /* 🔴 Color rojo para hacer juego con tus textos */
+  font-weight: bold;                      /* Texto en negrita */
+  text-align: center;                     /* Centrado absoluto */
+  width: 100%;                            /* Usa todo el ancho de la tarjeta para centrarse */
+}
+
+
+
+
+
 #video h2 {
   color: #CD853F; /* tono café */
   text-align: center;
   margin-bottom: 20px;
 }
+
 .navbar {
   background-color: #E2725B; /* terracota */
   padding: 1rem;
@@ -76,7 +109,6 @@
   border-bottom: none !important;/* fuerza quitar borde inferior */
 }
 
-
 .navbar a {
   font-size: 28px;       /* tamaño de letra más grande */
   margin: 0 40px;        /* separación horizontal entre palabras */
@@ -85,12 +117,11 @@
   font-weight: 600;      /* grosor de la fuente */
   letter-spacing: 2px;   /* separación entre letras dentro de cada palabra */
 }
+
 header, nav {
   border: none !important;
   background-color: #E2725B; /* mismo color que la barra */
 }
-
-
 
 /* 🎨 Estilos para las demás secciones */
 
@@ -100,23 +131,7 @@ section h2 {
   color: red; /* títulos en rojo */
 }
 
-/* Párrafos */
-section p {
-  color: red; /* párrafos en rojo */
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* Tablas en la sección Servicios */
-#servicios table, 
-#servicios th, 
-#servicios td {
-  color: red; /* texto en rojo */
-  border: 1px solid red; /* bordes en rojo */
-
-}
-
-/* 🎨 Justificar texto en todas las secciones */
+/* Párrafos generales de las secciones */
 section p {
   color: red;             /* texto en rojo (como pediste antes) */
   font-size: 18px;
@@ -125,6 +140,15 @@ section p {
   margin: 0 auto;
   max-width: 900px;       /* opcional: limita el ancho para mejor lectura */
 }
+
+/* Tablas en la sección Servicios */
+#servicios table, 
+#servicios th, 
+#servicios td {
+  color: red; /* texto en rojo */
+  border: 1px solid red; /* bordes en rojo */
+}
+
 /* 🎨 Centrar texto en la sección Inicio */
 #inicio p {
   color: red;             /* mantiene el color rojo */
@@ -134,6 +158,7 @@ section p {
   margin: 0 auto;
   max-width: 900px;       /* opcional: limita el ancho para mejor lectura */
 }
+
 /* 🎨 Encabezado de la tabla Servicios */
 #servicios thead th {
   background-color: #E2725B; /* fondo terracota */
@@ -142,6 +167,7 @@ section p {
   padding: 10px;             /* espacio interno */
   text-align: center;        /* centra el texto */
 }
+
 /* 🎨 Estilos específicos para la sección Misión y Visión */
 #mision-vision strong {
   display: block;          /* convierte Misión: y Visión: en bloque */
@@ -208,10 +234,12 @@ footer a:hover {
 }
 
 
-
-
-
-
-
-
-
+/* 🎨 Estilo para los pies de página de la galería */
+.gallery figcaption {
+  display: block;          /* asegura que se muestre */
+  margin-top: 10px;        /* espacio debajo de la imagen */
+  font-size: 16px;         /* tamaño legible */
+  color: #E2725B;          /* terracota para armonizar con tu navbar */
+  font-weight: 600;        /* texto más marcado */
+  text-align: center;      /* centrado debajo de la imagen */
+}

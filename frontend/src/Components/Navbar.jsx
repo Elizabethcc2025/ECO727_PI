@@ -1,7 +1,11 @@
+import React from 'react';
+// IMPORTANTE: Asegúrate de que tu archivo 'Logoprincipal.jpg' esté dentro de: src/assets/
+
 export default function Navbar() {
   return (
     <header>
-      <nav className="navbar">
+      <nav className="navbar" style={{ display: "flex", alignItems: "center", gap: "15px" }}>
+        
         <a href="#inicio">Inicio</a>
         <a href="#nosotros">Sobre Nosotros</a>
         <a href="#mision-vision">Misión y Visión</a>
@@ -14,7 +18,7 @@ export default function Navbar() {
   );
 }
 
-// Inicio
+// Componente: Inicio
 export function Inicio() {
   return (
     <section id="inicio">
@@ -25,7 +29,7 @@ export function Inicio() {
   );
 }
 
-// Sobre Nosotros
+// Componente: Sobre Nosotros
 export function Nosotros() {
   return (
     <section id="nosotros">
@@ -39,7 +43,7 @@ export function Nosotros() {
   );
 }
 
-// Misión y Visión
+// Componente: Misión y Visión
 export function MisionVision() {
   return (
     <section id="mision-vision">
@@ -56,7 +60,7 @@ export function MisionVision() {
   );
 }
 
-// Servicios
+// Componente: Servicios
 export function Servicios() {
   return (
     <section id="servicios">
@@ -96,7 +100,7 @@ export function Servicios() {
   );
 }
 
-// Galería
+// Componente: Galería
 export function Galeria() {
   return (
     <section id="galeria">
@@ -112,7 +116,7 @@ export function Galeria() {
   );
 }
 
-// Testimonios
+// Componente: Testimonios
 export function Testimonios() {
   return (
     <section id="testimonios">
@@ -126,7 +130,7 @@ export function Testimonios() {
   );
 }
 
-// Tema
+// Componente: Tema
 export function Tema() {
   return (
     <section id="tema">
