@@ -1,6 +1,3 @@
-import React from 'react';
-import logo from '../assets/Logoprincipal.jpg'; 
-
 export default function Navbar() {
   return (
     <header>
@@ -8,11 +5,11 @@ export default function Navbar() {
         className="navbar"
         style={{ display: "flex", alignItems: "center", gap: "15px" }}
       >
-        {/* REVISA QUE ESTA ETIQUETA IMG ESTÉ AQUÍ ADENTRO */}
+        {/* Logo antes de Inicio */}
         <img
-          src={logo}
+          src="/assets/Logoprincipal.jpg"
           alt="Logotipo Cafetería"
-          style={{ height: "40px", width: "auto", marginRight: "10px" }}
+          style={{ height: "10px", width: "auto", marginRight: "10px" }}
         />
 
         <a href="#inicio">Inicio</a>
@@ -26,6 +23,7 @@ export default function Navbar() {
     </header>
   );
 }
+
 
 
 
