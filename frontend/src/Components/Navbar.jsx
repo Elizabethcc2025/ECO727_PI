@@ -1,11 +1,20 @@
 import React from 'react';
-// IMPORTANTE: Asegúrate de que tu archivo 'Logoprincipal.jpg' esté dentro de: src/assets/
+import logo from '../assets/Logoprincipal.jpg'; 
 
 export default function Navbar() {
   return (
     <header>
-      <nav className="navbar" style={{ display: "flex", alignItems: "center", gap: "15px" }}>
-        
+      <nav
+        className="navbar"
+        style={{ display: "flex", alignItems: "center", gap: "15px" }}
+      >
+        {/* REVISA QUE ESTA ETIQUETA IMG ESTÉ AQUÍ ADENTRO */}
+        <img
+          src={logo}
+          alt="Logotipo Cafetería"
+          style={{ height: "40px", width: "auto", marginRight: "10px" }}
+        />
+
         <a href="#inicio">Inicio</a>
         <a href="#nosotros">Sobre Nosotros</a>
         <a href="#mision-vision">Misión y Visión</a>
@@ -17,6 +26,9 @@ export default function Navbar() {
     </header>
   );
 }
+
+
+
 
 // Componente: Inicio
 export function Inicio() {

@@ -243,3 +243,21 @@ footer a:hover {
   font-weight: 600;        /* texto más marcado */
   text-align: center;      /* centrado debajo de la imagen */
 }
+
+.video-footer {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6F4E37;   /* tono café */
+  text-align: center;
+}
+
+/* 🎨 Créditos del video */
+.video-credit {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #6F4E37;   /* tono café */
+  text-align: center;
+  font-style: italic;
+}
+
+
