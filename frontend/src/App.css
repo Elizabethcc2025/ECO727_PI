@@ -7,11 +7,12 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 3em;
+  padding: 0.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #00bfffaa);
 }
@@ -99,9 +100,10 @@
   margin-bottom: 20px;
 }
 
+
 .navbar {
   background-color: #E2725B; /* terracota */
-  padding: 1rem;
+  padding: 0rem;
   display: flex;
   justify-content: center;
   border: none;              /* elimina cualquier borde */
@@ -111,12 +113,15 @@
 
 .navbar a {
   font-size: 22px;       /* tamaño de letra más grande */
-  margin: 0 40px;        /* separación horizontal entre palabras */
+  margin: 0 15px;        /* separación horizontal entre palabras */
   color: #FFFFFF;        /* texto blanco */
   text-decoration: none; /* sin subrayado */
   font-weight: 600;      /* grosor de la fuente */
-  letter-spacing: 2px;   /* separación entre letras dentro de cada palabra */
+  letter-spacing: 1px;   /* separación entre letras dentro de cada palabra */
 }
+
+
+
 
 header, nav {
   border: none !important;

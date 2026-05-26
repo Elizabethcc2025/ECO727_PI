@@ -30,6 +30,8 @@ export default function Gallery() {
           <figcaption>© 324PRAXIS, 2024. ArchDaily.</figcaption>
         </figure>
         
+
+        
       </div>
     </section>
   );

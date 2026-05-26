@@ -6,11 +6,12 @@ export default function Navbar() {
         style={{ display: "flex", alignItems: "center", gap: "15px" }}
       >
         {/* Logo antes de Inicio */}
-        <img
-          src="/assets/Logoprincipal.jpg"
+       <a><img
+          src="/assets/Logo4OK.png"
           alt="Logotipo Cafetería"
-          style={{ height: "10px", width: "auto", marginRight: "10px" }}
-        />
+        
+        /></a>
+        
 
         <a href="#inicio">Inicio</a>
         <a href="#nosotros">Sobre Nosotros</a>
