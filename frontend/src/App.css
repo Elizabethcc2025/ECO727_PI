@@ -46,78 +46,68 @@
   color: #009acd; /* texto azul cielo más oscuro */
 }
 
-
-
-  
-   
-
 /* 1. Contenedor Grid Principal */
 .gallery {
-  display: grid;                          /* Usamos Grid */
-  grid-template-columns: repeat(4, 1fr);  /* 4 columnas iguales en pantallas grandes */
-  gap: 30px;                              /* Espacio limpio entre cada tarjeta */
+  display: grid;                          
+  grid-template-columns: repeat(4, 1fr);  
+  gap: 30px;                              
   margin-top: 20px;
-  justify-items: center;                  /* Centra cada tarjeta en su espacio del Grid */
+  justify-items: center;                  
 }
 
 /* 2. Contenedor de la Tarjeta (Imagen + Texto) */
 .gallery figure {
   margin: 0;
   padding: 0;
-  width: 370px;                           /* Ancho exacto igual al de tus fotos */
-  display: flex;                          /* Activa Flexbox interno */
-  flex-direction: column;                 /* Acomoda los elementos hacia abajo (en vertical) */
-  align-items: center;                    /* Centra horizontalmente la foto y el texto */
+  width: 370px;                           
+  display: flex;                          
+  flex-direction: column;                 
+  align-items: center;                    
 }
 
 /* 3. Estilo de la Imagen */
 .img-gallery {
-  width: 370px !important;                /* Fuerza el ancho fijo */
-  height: 270px !important;               /* Fuerza la altura fija */
-  object-fit: cover;                      /* Recorta la foto sin deformarla */
-  border-radius: 10px;                    /* Esquinas redondeadas */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* Sombra suave para darle volumen */
+  width: 370px !important;                
+  height: 270px !important;               
+  object-fit: cover;                      
+  border-radius: 10px;                    
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
 }
 
 /* 4. Estilo del Pie de Página (Texto) */
 .gallery figcaption {
-  display: block !important;              /* Asegura que el navegador lo renderice */
-  margin-top: 12px;                       /* Crea un espacio limpio debajo de la foto */
-  font-size: 18px !important;             /* Tamaño de letra perfectamente legible */
-  color: red !important;                  /* 🔴 Color rojo para hacer juego con tus textos */
-  font-weight: bold;                      /* Texto en negrita */
-  text-align: center;                     /* Centrado absoluto */
-  width: 100%;                            /* Usa todo el ancho de la tarjeta para centrarse */
+  display: block !important;              
+  margin-top: 12px;                       
+  font-size: 18px !important;             
+  color: red !important;                  
+  font-weight: bold;                      
+  text-align: center;                     
+  width: 100%;                            
 }
 
-
-
-
-
 #video h2 {
-  color: #CD853F; /* tono café */
+  color: #CD853F; 
   text-align: center;
   margin-bottom: 20px;
 }
 
-
 .navbar {
-  background-color: #E2725B; /* terracota */
+  background-color: #E2725B; 
   padding: 0rem;
   display: flex;
   justify-content: center;
-  border: none;              /* elimina cualquier borde */
-  border-top: none !important;   /* fuerza quitar borde superior */
-  border-bottom: none !important;/* fuerza quitar borde inferior */
+  border: none;              
+  border-top: none !important;   
+  border-bottom: none !important;
 }
 
 .navbar a {
-  font-size: 25px;       /* tamaño de letra más grande */
-  margin: 0 15px;        /* separación horizontal entre palabras */
-  color: #FFFFFF;        /* texto blanco */
-  text-decoration: none; /* sin subrayado */
-  font-weight: 600;      /* grosor de la fuente */
-  letter-spacing: 1px;   /* separación entre letras dentro de cada palabra */
+  font-size: 25px;       
+  margin: 0 15px;        
+  color: #FFFFFF;        
+  text-decoration: none; 
+  font-weight: 600;      
+  letter-spacing: 1px;   
 }
 
 .navbar a, 
@@ -126,82 +116,69 @@ section h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
-
-
-
-
-
 header, nav {
   border: none !important;
-  background-color: #E2725B; /* mismo color que la barra */
+  background-color: #E2725B; 
 }
 
 /* 🎨 Estilos para las demás secciones */
-
-/* Títulos principales y secundarios */
 section h1, 
 section h2 {
-  color: red; /* títulos en rojo */
+  color: red; 
 }
 
-/* Párrafos generales de las secciones */
 section p {
-  color: red;             /* texto en rojo (como pediste antes) */
+  color: red;             
   font-size: 18px;
   line-height: 1.6;
-  text-align: justify;    /* justifica el texto */
+  text-align: justify;    
   margin: 0 auto;
-  max-width: 900px;       /* opcional: limita el ancho para mejor lectura */
+  max-width: 900px;       
 }
 
-/* Tablas en la sección Servicios */
 #servicios table, 
 #servicios th, 
 #servicios td {
-  color: red; /* texto en rojo */
-  border: 1px solid red; /* bordes en rojo */
+  color: red; 
+  border: 1px solid red; 
 }
 
-/* 🎨 Centrar texto en la sección Inicio */
 #inicio p {
-  color: red;             /* mantiene el color rojo */
+  color: red;             
   font-size: 18px;
   line-height: 1.6;
-  text-align: center;     /* centra el texto */
+  text-align: center;     
   margin: 0 auto;
-  max-width: 900px;       /* opcional: limita el ancho para mejor lectura */
+  max-width: 900px;       
 }
 
-/* 🎨 Encabezado de la tabla Servicios */
 #servicios thead th {
-  background-color: #E2725B; /* fondo terracota */
-  color: #FFFFFF;            /* texto blanco para contraste */
-  font-size: 20px;           /* tamaño de fuente más grande */
-  padding: 10px;             /* espacio interno */
-  text-align: center;        /* centra el texto */
+  background-color: #E2725B; 
+  color: #FFFFFF;            
+  font-size: 20px;           
+  padding: 10px;             
+  text-align: center;        
 }
 
-/* 🎨 Estilos específicos para la sección Misión y Visión */
 #mision-vision strong {
-  display: block;          /* convierte Misión: y Visión: en bloque */
-  text-align: center;      /* centra los subtítulos */
-  font-size: 20px;         /* tamaño más grande */
-  margin-bottom: 8px;      /* espacio debajo del subtítulo */
-  color: red;              /* mantiene el color rojo */
+  display: block;          
+  text-align: center;      
+  font-size: 20px;         
+  margin-bottom: 8px;      
+  color: red;              
 }
 
 #mision-vision p {
-  text-align: justify;     /* justifica el texto */
+  text-align: justify;     
   font-size: 18px;
   line-height: 1.6;
   margin: 0 auto;
-  max-width: 900px;        /* opcional: limita el ancho para mejor lectura */
-  color: red;              /* mantiene el color rojo */
+  max-width: 900px;        
+  color: red;              
 }
 
-/* 🎨 Formulario */
 form {
-  background-color: #E2725B; /* fondo terracota */
+  background-color: #E2725B; 
   padding: 20px;
   border-radius: 8px;
 }
@@ -209,13 +186,13 @@ form {
 form label,
 form input,
 form textarea {
-  color: #FFFFFF; /* texto blanco para contraste */
+  color: #000000; 
   font-size: 16px;
 }
 
 form button {
-  background-color: #FFFFFF; /* botón blanco */
-  color: #E2725B;            /* texto terracota */
+  background-color: #FFFFFF; 
+  color: #E2725B;            
   font-weight: bold;
   padding: 10px 20px;
   border: none;
@@ -224,20 +201,19 @@ form button {
 }
 
 form button:hover {
-  background-color: #CD5C5C; /* tono terracota más oscuro al pasar el mouse */
+  background-color: #CD5C5C; 
   color: #FFFFFF;
 }
 
-/* 🎨 Pie de página */
 footer {
-  background-color: #E2725B; /* fondo terracota */
-  color: #FFFFFF;            /* texto blanco */
+  background-color: #E2725B; 
+  color: #FFFFFF;            
   text-align: center;
   padding: 15px;
 }
 
 footer a {
-  color: #FFFFFF;            /* enlaces en blanco */
+  color: #FFFFFF;            
   text-decoration: none;
   margin: 0 10px;
 }
@@ -246,31 +222,63 @@ footer a:hover {
   text-decoration: underline;
 }
 
-
-/* 🎨 Estilo para los pies de página de la galería */
 .gallery figcaption {
-  display: block;          /* asegura que se muestre */
-  margin-top: 10px;        /* espacio debajo de la imagen */
-  font-size: 16px;         /* tamaño legible */
-  color: #E2725B;          /* terracota para armonizar con tu navbar */
-  font-weight: 600;        /* texto más marcado */
-  text-align: center;      /* centrado debajo de la imagen */
+  display: block;          
+  margin-top: 10px;        
+  font-size: 16px;         
+  color: #E2725B;          
+  font-weight: 600;        
+  text-align: center;      
 }
 
 .video-footer {
   margin-top: 15px;
   font-size: 14px;
-  color: #6F4E37;   /* tono café */
+  color: #6F4E37;   
   text-align: center;
 }
 
-/* 🎨 Créditos del video */
 .video-credit {
   margin-top: 10px;
   font-size: 14px;
-  color: #6F4E37;   /* tono café */
+  color: #6F4E37;   
   text-align: center;
   font-style: italic;
 }
 
+/* 📱 Responsividad para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); 
+  }
 
+  .gallery figure,
+  .img-gallery {
+    width: 100% !important;   
+    height: auto !important;  
+  }
+}
+
+/* 📱 Responsividad para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr; 
+    gap: 15px;                  
+  }
+
+  .gallery figure,
+  .img-gallery {
+    width: 100% !important;   
+    height: auto !important;  
+  }
+
+  .navbar a {
+    font-size: 18px;          
+    margin: 0 8px;            
+  }
+
+  section p {
+    font-size: 16px;          
+    max-width: 100%;          
+  }
+}

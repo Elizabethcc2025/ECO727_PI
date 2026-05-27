@@ -1,7 +1,7 @@
 export default function Testimonials() {
   return (
     <section id="testimonios">
-      <h2>Testimonios / Casos de Éxito</h2>
+      <h2>Testimonios</h2>
       <div className="testimonials-container">
         <div className="testimonial-card">
           <p>“El mejor café de la zona, siempre fresco y con un ambiente acogedor.”</p>

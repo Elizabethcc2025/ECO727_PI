@@ -19,7 +19,7 @@ export default function Navbar() {
         <a href="#servicios">Servicios</a>
         <a href="#galeria">Galería</a>
         <a href="#testimonios">Testimonios</a>
-        <a href="#tema">Tema</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </header>
   );
@@ -141,11 +141,11 @@ export function Testimonios() {
   );
 }
 
-// Componente: Tema
-export function Tema() {
+// Componente: Formulario
+export function formulario() {
   return (
-    <section id="tema">
-      <h2>Tema</h2>
+    <section id="contacto">
+      <h2>Formulario</h2>
       <p>
         Nuestra cafetería está inspirada en la cultura mexicana, con decoración
         artesanal, música tradicional y un ambiente que te hará sentir en casa.
