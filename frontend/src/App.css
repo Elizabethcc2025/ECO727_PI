@@ -112,13 +112,20 @@
 }
 
 .navbar a {
-  font-size: 22px;       /* tamaño de letra más grande */
+  font-size: 25px;       /* tamaño de letra más grande */
   margin: 0 15px;        /* separación horizontal entre palabras */
   color: #FFFFFF;        /* texto blanco */
   text-decoration: none; /* sin subrayado */
   font-weight: 600;      /* grosor de la fuente */
   letter-spacing: 1px;   /* separación entre letras dentro de cada palabra */
 }
+
+.navbar a, 
+section h1, 
+section h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 
 
