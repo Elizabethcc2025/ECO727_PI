@@ -7,7 +7,7 @@ export default function Navbar() {
       >
         {/* Logo antes de Inicio */}
        <a><img
-          src="/assets/Logo4OK.png"
+          src="/assets/Logo5.png"
           alt="Logotipo Cafetería"
         
         /></a>

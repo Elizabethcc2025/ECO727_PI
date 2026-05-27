@@ -47,9 +47,9 @@
 }
 
 
-/* =========================================================================
-   🎨 ESTILOS CORREGIDOS PARA LA GALERÍA (COPIA Y REEMPLAZA ESTO)
-   ========================================================================= */
+
+  
+   
 
 /* 1. Contenedor Grid Principal */
 .gallery {
@@ -119,6 +119,7 @@
   font-weight: 600;      /* grosor de la fuente */
   letter-spacing: 1px;   /* separación entre letras dentro de cada palabra */
 }
+
 
 
 
