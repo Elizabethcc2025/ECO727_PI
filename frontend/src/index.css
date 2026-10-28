@@ -1,3 +1,5 @@
+
+/* ======== ESTILOS GENERALES ======== */
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +22,7 @@ img {
 
 .Logo {
   width: 500px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
@@ -47,7 +50,7 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0.2rem 0.2rem;
+  margin: 0.2rem;
   font-weight: 600;
   transition: color 0.3s;
 }
@@ -68,29 +71,87 @@ section h2 {
   margin-bottom: 1rem;
 }
 
+/* ======== IFRAME RESPONSIVO ======== */
 iframe {
+  display: block;
   width: 100%;
   max-width: 600px;
-  height: 340px;
+  aspect-ratio: 16 / 9;
+  height: auto;
   border: none;
+  margin: 1rem auto;
+}
+
+/* ======== VIDEO RESPONSIVO ======== */
+#video {
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#video h2 {
+  color: #6F4E37;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#video video {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  object-fit: contain;
 }
 
 /* ======== GALERÍA ======== */
 .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+  justify-items: center;
+}
+
+.gallery figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 370px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-gallery {
+  display: block;
+  width: 100% !important;
+  height: 270px !important;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.gallery figcaption {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+  text-align: center;
 }
 
 .gallery div {
-  width: 400px;
+  width: 100%;
   text-align: center;
 }
 
 .img-gallery,
 .video-gallery {
-  width: 100%;
   border-radius: 10px;
 }
 
@@ -132,6 +193,10 @@ form {
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
+  background-color: #E2725B;
+  padding: 20px;
+  border-radius: 8px;
+  border: 3px solid #6F4E37;
 }
 
 form input,
@@ -143,13 +208,21 @@ form textarea {
   border-radius: 6px;
 }
 
+form label,
+form input,
+form textarea {
+  color: #000000;
+  font-size: 16px;
+}
+
 form button {
   display: block;
   width: 100%;
-  background-color: #00bfff;
-  color: white;
+  background-color: #FFFFFF;
+  color: #E2725B;
+  font-weight: bold;
+  padding: 10px 20px;
   border: none;
-  padding: 1rem;
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
@@ -157,19 +230,226 @@ form button {
 }
 
 form button:hover {
-  background-color: #009acd;
+  background-color: #CD5C5C;
+  color: #FFFFFF;
 }
 
 /* ======== FOOTER ======== */
 footer {
-  background-color: #009acd;
-  color: white;
+  background-color: #E2725B;
+  color: #FFFFFF;
   text-align: center;
-  padding: 1rem;
+  padding: 15px;
   font-size: 0.9rem;
 }
 
-/* ======== RESPONSIVE DESIGN ======== */
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.video-footer,
+.video-credit {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #6F4E37;
+  text-align: center;
+}
+
+.video-credit {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* ======== ESTILOS DE APP.CSS ======== */
+#root {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #F8F0E3;
+}
+
+.logo {
+  height: 3em;
+  padding: 0.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #00bfffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  border: 2px solid #E2725B;
+  border-radius: 8px;
+  background-color: #F5F5DC;
+}
+
+.read-the-docs {
+  color: #009acd;
+}
+
+/* ======== NAVBAR PERSONALIZADA ======== */
+.navbar {
+  background-color: #E2725B;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 4px solid #6F4E37;
+  width: 100%;
+}
+
+.navbar a {
+  font-size: 22px;
+  margin: 0;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0;
+  white-space: normal;
+}
+
+.navbar a,
+section h1,
+section h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header,
+nav {
+  border: none !important;
+  background-color: #E2725B;
+}
+
+/* ======== TEXTOS Y SECCIONES ======== */
+section h1,
+section h2 {
+  color: #6F4E37;
+}
+
+section p {
+  color: red;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+#inicio p {
+  color: red;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+#servicios table,
+#servicios th,
+#servicios td {
+  color: #6F4E37;
+  border: 1px solid #6F4E37;
+}
+
+#servicios thead th {
+  background-color: #E2725B;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+#mision-vision strong {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: red;
+}
+
+#mision-vision p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 900px;
+  color: red;
+}
+
+/* ======== CLIENTES ======== */
+#clientes {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #F8F0E3;
+}
+
+#clientes h2 {
+  color: #6F4E37;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+#clientes p {
+  color: red;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ======== RESPONSIVE: TABLETS ======== */
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery figure {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .img-gallery {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 370 / 270;
+  }
+}
+
+/* ======== RESPONSIVE: CELULARES ======== */
 @media (max-width: 768px) {
   header {
     text-align: center;
@@ -184,7 +464,8 @@ footer {
   }
 
   iframe {
-    width: 250px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .container {
@@ -201,14 +482,50 @@ footer {
     padding: 0.6rem;
   }
 
-  .gallery div {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  #video {
+    padding: 1.5rem 0.75rem;
+  }
+
+  #video video {
     width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    gap: 12px;
+  }
+
+  .navbar a {
+    font-size: 18px;
+  }
+
+  #clientes h2 {
+    font-size: 25px;
+  }
+
+  .navbar .navbar-logo img {
+    display: block;
+    height: 74px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    padding: 0;
   }
 }
 
 @media (max-width: 480px) {
   body {
     font-size: 0.95rem;
+  }
+
+  #root {
+    padding: 1rem 0.5rem;
   }
 
   section {
@@ -221,5 +538,26 @@ footer {
 
   table {
     font-size: 0.85rem;
+  }
+
+  .gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .gallery figcaption {
+    font-size: 16px;
+  }
+
+  .navbar {
+    gap: 10px;
+    padding: 8px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+  }
+
+  #video {
+    padding: 1.5rem 0.5rem;
   }
 }

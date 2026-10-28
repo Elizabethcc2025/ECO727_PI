@@ -86,29 +86,38 @@
 }
 
 #video h2 {
-  color: #CD853F; 
+  color: #6F4E37; 
   text-align: center;
   margin-bottom: 20px;
 }
 
+
 .navbar {
-  background-color: #E2725B; 
-  padding: 0rem;
+  background-color: #E2725B;
+  padding: 8px 12px;
   display: flex;
   justify-content: center;
-  border: none;              
-  border-top: none !important;   
-  border-bottom: none !important;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  border: 4px solid #6F4E37;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+
+
 .navbar a {
-  font-size: 25px;       
-  margin: 0 15px;        
-  color: #FFFFFF;        
-  text-decoration: none; 
-  font-weight: 600;      
-  letter-spacing: 1px;   
+  font-size: 22px;
+  margin: 0;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
+
 
 .navbar a, 
 section h1, 
@@ -124,7 +133,7 @@ header, nav {
 /* 🎨 Estilos para las demás secciones */
 section h1, 
 section h2 {
-  color: red; 
+  color: #6F4E37; 
 }
 
 section p {
@@ -139,8 +148,8 @@ section p {
 #servicios table, 
 #servicios th, 
 #servicios td {
-  color: red; 
-  border: 1px solid red; 
+  color: #6F4E37; 
+  border: 1px solid #6F4E37; 
 }
 
 #inicio p {
@@ -178,9 +187,10 @@ section p {
 }
 
 form {
-  background-color: #E2725B; 
+  background-color: #E2725B;
   padding: 20px;
   border-radius: 8px;
+  border: 3px solid #6F4E37;
 }
 
 form label,
@@ -273,12 +283,61 @@ footer a:hover {
   }
 
   .navbar a {
-    font-size: 18px;          
-    margin: 0 8px;            
-  }
+  font-size: 16px;
+  margin: 0;
+}
 
   section p {
     font-size: 16px;          
-    max-width: 100%;          
+    max-width: 100%;    
   }
+}
+
+
+  section p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+
+/* NUEVA SECCIÓN: CLIENTES */
+#clientes {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #F8F0E3;
+}
+
+#clientes h2 {
+  color: #6F4E37;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+#clientes p {
+  color: red;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  #clientes h2 {
+    font-size: 25px;
+  }
+
+  
+
+
+/* Tamaño del logo de la cafetería */
+.navbar .navbar-logo img {
+  display: block;
+  height: 74px;
+  width: auto;
+  object-fit: contain;
+}
+
+
 }

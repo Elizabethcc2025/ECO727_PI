@@ -7,8 +7,7 @@ export default function HeroSection() {
       <br />
 
       <iframe
-        width="560"
-        height="315"
+        
         src="https://www.youtube.com/embed/F2Lg-ehdSDE"
         title="Coffee Cinematic Stock Footage"
         frameBorder="0"
